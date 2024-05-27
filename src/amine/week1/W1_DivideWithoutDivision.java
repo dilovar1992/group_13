@@ -18,7 +18,7 @@ public class W1_DivideWithoutDivision {
     }
 
     public static double[] divideNumber(double dividend, double divisor) {
-        double remainder = 0;
+        double remainder;
         double quotient = 0;
         remainder = dividend % divisor;
         dividend -= remainder;
