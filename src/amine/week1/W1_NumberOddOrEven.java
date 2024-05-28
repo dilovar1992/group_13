@@ -6,7 +6,7 @@ public class W1_NumberOddOrEven {
     public static void main(String[] args) {
         //setup scanner
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter a whole number");
+        System.out.println("Please enter a whole number: ");
         int number = input.nextInt();
         input.close();
         System.out.println(identify(number));
