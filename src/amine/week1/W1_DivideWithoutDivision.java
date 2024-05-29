@@ -6,28 +6,57 @@ public class W1_DivideWithoutDivision {
     public static void main(String[] args) {
         //setup scanner for user input
         Scanner input = new Scanner(System.in);
+        double divisor;
+        double dividend;
+
+        //ask for user input, dividend can be zero
         System.out.println("Enter a number to be divided: ");
-        double dividend = input.nextDouble();
-        System.out.println("Enter a divisor number: ");
-        double divisor = input.nextDouble();
+        dividend = input.nextDouble();
+
+        do {
+            System.out.println("Enter a divisor number: ");
+            divisor = input.nextDouble();
+
+            //check if user entered valid number, division with zero is not possible
+            if (divisor == 0) {
+                System.out.println("Divisor cannot be zero");
+            }
+        } while (divisor == 0);//repeat loop if user entered zero
+
         input.close();
 
-        double [] result = divideNumber(dividend, divisor);
-        System.out.println("The quotient is " + result[0] + (result[1]>0?" and the remainder is "+ result[1] : "."));
+        //call method to perform division and display result
+        double[] result = divideNumber(dividend, divisor);
+        System.out.println("The quotient is " + result[0] + (result[1] > 0 ? " and the remainder is " + result[1] : "."));
 
     }
 
     public static double[] divideNumber(double dividend, double divisor) {
+
+
+        //sign is assumed to be positive
+        int sign = 1;
+
+        //check if the division will yield a negative quotient
+        //if dividend or divisor is negative, result will be negative
+        //if both divisor and dividend is negative, result will be positive
+        if (dividend < 0 && divisor > 0 || dividend > 0 && divisor < 0) {
+            sign = -1;
+        }
+
         double remainder;
         double quotient = 0;
-        remainder = dividend % divisor;
-        dividend -= remainder;
+        dividend = Math.abs(dividend);
+        divisor = Math.abs(divisor);
 
-        while (dividend > 0) {
+        // run the loop until dividend is smaller than divisor
+        while (dividend >= divisor) {
             dividend -= divisor;
             quotient++;
         }
-        return new double[]{quotient,remainder};
+
+
+        return new double[]{sign * quotient, dividend};
     }
 
 
