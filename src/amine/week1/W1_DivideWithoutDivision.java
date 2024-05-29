@@ -32,8 +32,6 @@ public class W1_DivideWithoutDivision {
     }
 
     public static double[] divideNumber(double dividend, double divisor) {
-
-
         //sign is assumed to be positive
         int sign = 1;
 
@@ -44,7 +42,6 @@ public class W1_DivideWithoutDivision {
             sign = -1;
         }
 
-        double remainder;
         double quotient = 0;
         dividend = Math.abs(dividend);
         divisor = Math.abs(divisor);
@@ -54,7 +51,6 @@ public class W1_DivideWithoutDivision {
             dividend -= divisor;
             quotient++;
         }
-
 
         return new double[]{sign * quotient, dividend};
     }
