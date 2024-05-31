@@ -7,12 +7,17 @@ public class W2_ConsecutiveNumbers {
     }
 
     public static void displayNumbers(int number) {
+        //setting variables with messages
+        // so it easy to re-use and easy to read
         String message2 = "Codility";
         String message3 = "Test";
         String message5 = "Coders";
 
         for (int i = 1; i <= number; i++) {
+            //checking condition to print message or number
 
+            // checking the most broad condition first,
+            // so it is not mistakenly assigned to other numbers divisibility list
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0){
                 System.out.println(message2+message3+message5);
             }else if (i % 2 == 0 && i % 3 == 0){
