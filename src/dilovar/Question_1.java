@@ -6,7 +6,7 @@ public class Question_1 {
      */
      public static void main(String[] args) {
 
-         System.out.println(divisionWithoutOperators(1, 3));
+         System.out.println(divisionWithoutOperators(1, 0));
 
 
      }
@@ -16,7 +16,7 @@ public class Question_1 {
          long quotient=0;
          long sign=(a<0)||(b<0)?-1:1;
 
-         while(dividend>=divisor){
+         while(dividend>=divisor && divisor>0){
              dividend-=divisor;
              quotient++;
          }
