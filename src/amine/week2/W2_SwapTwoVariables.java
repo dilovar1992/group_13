@@ -1,9 +1,5 @@
 package amine.week2;
-/*
-Numbers – Swap Numbers
-Swap two variables' values without using a third variable.
 
-*/
 public class W2_SwapTwoVariables {
     public static void main(String[] args) {
 
