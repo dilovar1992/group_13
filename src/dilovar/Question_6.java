@@ -13,7 +13,7 @@ public static void main(String[] args) {
     b=b-a;
     //a=5
     //b=10
-    a=a+b;
+    a=a+b;//15
     System.out.println("a = " + a);//a=15
     System.out.println("b = " + b);//b=10
 }
