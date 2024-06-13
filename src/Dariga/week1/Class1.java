@@ -1,4 +1,4 @@
-package metehan.week1;
+package Dariga.week1;
 
 public class Class1 {
 }
