@@ -16,6 +16,7 @@ public class ReverseNegativeScanner {
 
             input.close();
 
+
         }
 
         //method that reverses integer by using the String class
