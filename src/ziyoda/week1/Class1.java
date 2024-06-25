@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Class1 {
-    // Method to merge two maps and add values for common keys
+    // Method to merge two maps and add values for common keys "Hello"
     public static Map<String, Integer> mergeAndSumValues(Map<String, Integer> map1, Map<String, Integer> map2) {
         Map<String, Integer> result = new HashMap<>(map1); // Initialize the result map with the first map
 
