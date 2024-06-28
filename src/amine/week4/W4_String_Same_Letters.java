@@ -15,7 +15,7 @@ public class W4_String_Same_Letters {
      */
     public static void main(String[] args) {
         String str1 = "Teams";
-        String str2 = "Meat"; //Bayraminiz mubarek olsun
+        String str2 = "Meat";
 
         System.out.println("str1 = " + str1);
         System.out.println("str2 = " + str2);
@@ -39,12 +39,10 @@ public class W4_String_Same_Letters {
         for (int i = 0; i < letters.length; i++) {
             String key = letters[i];
             if (letterCount.containsKey(key)){
-
                 letterCount.put(key,letterCount.get(key) + 1);
             }else {
                 letterCount.put(key,1);
             }
-
         }
         return letterCount;
     }
