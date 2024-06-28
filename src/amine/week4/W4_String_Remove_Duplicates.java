@@ -22,7 +22,7 @@ public class W4_String_Remove_Duplicates {
 //        for (int i = 0; i < str.length(); i++) {
 //            uniqueLetters.add(str.substring(i, i + 1));
 
-        //Making a list to containg all letters of the given string
+        //Making a list to containing all letters of the given string
         List<String> uniqueLetters = new ArrayList<>(Arrays.asList(str.split("")));
 
         //making Iterator object in order to loop through the list and alter the list
