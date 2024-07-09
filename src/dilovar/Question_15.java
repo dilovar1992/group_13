@@ -16,6 +16,7 @@ public class Question_15 {
     public static void main(String[] args) {
         int number = 15;
         System.out.println(BinaryFrequencyOf1(number));
+        System.out.println(binaryOfN(number));
 
     }
 
@@ -23,6 +24,17 @@ public class Question_15 {
         String binary = Integer.toBinaryString(number);
         List<String> binarylist = new ArrayList<>(Arrays.asList(binary.split("")));
         return Collections.frequency(binarylist, "1");
+    }
+    public static int binaryOfN(int n){ // 6 -> 3 -> 1 -> 0
+
+        String binary = ""; // 0 -> 10 -> 110
+
+        while(n > 0){
+            binary = n % 2 + binary;
+            n /= 2;
+        }
+
+        return binary.replace("0", "").length();
     }
 //
 //    Ex:
