@@ -1,4 +1,4 @@
-package instructor.week_03;
+package zeynep.week3;
 
 public class W3_Reverse_Negative {
     

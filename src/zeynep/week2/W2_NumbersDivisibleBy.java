@@ -1,6 +1,33 @@
 package zeynep.week2;
 
 public class W2_NumbersDivisibleBy {
+    public static void main(String[] args) {
+
+        DivisibleBy(90);
+
+    }
+
+    public static void DivisibleBy(int n){
+        String DivisibleBy15 = "";
+        String DivisibleBy5 = "";
+        String DivisibleBy3 = "";
+
+        for (int i = 1; i <= n; i++) {
+            if ((i % 15 == 0) && (i % 5 == 0) && (i % 3 == 0)){
+                DivisibleBy15 += " " + i;
+            } else if ((i % 3 == 0) && (i % 15 != 0)) {
+                DivisibleBy3 += " " + i;
+            } else if ((i % 5 == 0) && (i % 15 != 0)) {
+                DivisibleBy5 += " " + i;
+            }
+        }
+
+        System.out.println("Divisible By 15: " + DivisibleBy15);
+        System.out.println("Divisible By 5: " + DivisibleBy5);
+        System.out.println("Divisible By 3: " + DivisibleBy3);
+
+    }
+
 }
 /*Numbers – Divisible by 3, 5, 15
 Write a program that can print the numbers between 1 ~ N that can be divisible by 3, 5, and 15.

@@ -5,7 +5,7 @@ public class Question_7 {
         Write a method that can check if a number is prime or not
      */
      public static void main(String[] args) {
-         int n=64;
+         int n=23;
          isPrimNumber(n);
 
 
