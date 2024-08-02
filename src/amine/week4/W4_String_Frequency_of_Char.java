@@ -30,7 +30,6 @@ Ex: FrequencyOfChars("AAABBCDD") ==> A3B2C1D2
             }else {
                 letterCount.put(key,1);
             }
-
         }
         return letterCount;
     }
