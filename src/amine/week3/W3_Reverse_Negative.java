@@ -57,7 +57,4 @@ public class W3_Reverse_Negative {
         }
         return reversed*sign;
     }
-
-
-
 }
