@@ -15,31 +15,23 @@ public class W7_ArraySortAscending {
 
         System.out.println("arraySortAsc({11,29,11,8,20,15,20,1,21,12,16} \n Method using for loop) = " + Arrays.toString(arraySortAsc(numbers)));
 
-        System.out.println("arraySortAsc2({11,29,11,8,20,15,20,1,21,12,16} \n Method using Array.sort) = " + Arrays.toString(arraySortAsc2(numbers2)));
-
     }
 
     public static int[] arraySortAsc(int[] numbers){
-        int [] sortedArray = numbers;
 
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length; j++) {
 
-                if (sortedArray[i] < numbers[j]){
-                    int temp = sortedArray[j];
-                    sortedArray[j] = sortedArray[i];
-                    sortedArray[i] = temp;
+                if (numbers[i] < numbers[j]){
+                    int temp = numbers[j];
+                    numbers[j] = numbers[i];
+                    numbers[i] = temp;
                 }
             }
         }
-        return sortedArray;
-    }
-
-    public static int[] arraySortAsc2(int[] numbers){
-
-        Arrays.sort(numbers);
         return numbers;
     }
+
 
 
 

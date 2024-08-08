@@ -17,19 +17,18 @@ arr = Sort(arr); ==> {90, 20, 10, 8, 7};
     }
 
     public static int[] arraySortDesc(int[] numbers){
-        int [] sortedArray = numbers;
 
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length; j++) {
 
-                if (sortedArray[i] > numbers[j]){
-                    int temp = sortedArray[j];
-                    sortedArray[j] = sortedArray[i];
-                    sortedArray[i] = temp;
+                if (numbers[i] > numbers[j]){
+                    int temp = numbers[j];
+                    numbers[j] = numbers[i];
+                    numbers[i] = temp;
                 }
             }
         }
-        return sortedArray;
+        return numbers;
     }
 
 
