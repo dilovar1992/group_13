@@ -5,14 +5,18 @@ package amine.week7;
 Ex: int[] arr = {10, 9, 8, 7};
 arr = Sort(arr); ==>{ 7, 8, 9, 10};*/
 
-import java.util.Arrays;
+import java.util.*;
 
 public class W7_ArraySortAscending {
 
     public static void main(String[] args) {
         int [] numbers = {11,29,11,8,20,15,20,1,21,12,16};
+        int [] numbers2 = {11,29,11,8,20,15,20,1,21,12,16};
 
-        System.out.println("arraySortAsc({11,29,11,8,20,15,20,1,21,12,16}) = " + Arrays.toString(arraySortAsc(numbers)));
+        System.out.println("arraySortAsc({11,29,11,8,20,15,20,1,21,12,16} \n Method using for loop) = " + Arrays.toString(arraySortAsc(numbers)));
+
+        System.out.println("arraySortAsc2({11,29,11,8,20,15,20,1,21,12,16} \n Method using Array.sort) = " + Arrays.toString(arraySortAsc2(numbers2)));
+
     }
 
     public static int[] arraySortAsc(int[] numbers){
@@ -29,6 +33,12 @@ public class W7_ArraySortAscending {
             }
         }
         return sortedArray;
+    }
+
+    public static int[] arraySortAsc2(int[] numbers){
+
+        Arrays.sort(numbers);
+        return numbers;
     }
 
 
