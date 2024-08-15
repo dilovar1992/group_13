@@ -13,8 +13,6 @@ public class SumOfDigitsInString {
     }
 
 
-
-
     public static int sumOfDigits(String str){
 
         int num = Integer.parseInt(str);
@@ -27,7 +25,6 @@ public class SumOfDigitsInString {
             num /= 10;
 
         }
-
         return sum;
 
     }
