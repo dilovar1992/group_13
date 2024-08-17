@@ -14,7 +14,7 @@ sortArrayDesc(arr);
 
     }
 
-    public static void sortArrayDesc(int[] arr) {
+    public static int[] sortArrayDesc(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] < arr[j + 1]) {
@@ -24,7 +24,7 @@ sortArrayDesc(arr);
                 }
             }
         }
-        System.out.println("sorted in DESC = "+Arrays.toString(arr));
+        return arr;
     }
 }
 
