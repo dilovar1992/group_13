@@ -12,12 +12,12 @@ Ex: int[] arr = {10, 9, 8, 7};
     public static void main(String[] args) {
         int[] arr = {10, 9, 8, 7};
 
-        sortArrayASC(arr);
+        System.out.println(sortArrayASC(arr));
 
 
     }
     //bubble sort
-    public static void sortArrayASC(int[] arr) {
+    public static int[] sortArrayASC(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
@@ -27,7 +27,7 @@ Ex: int[] arr = {10, 9, 8, 7};
                 }
             }
         }
-        System.out.println("sorted in ASC = "+Arrays.toString(arr));
+        return arr;
     }
 
 
