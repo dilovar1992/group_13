@@ -17,3 +17,8 @@ public class RemoveName {
     }
 }
 
+/*
+names.removeIf(): This method takes a lambda expression that defines a condition for removal. In this case, it checks if the name equals "Ahmed".
+The lambda expression name -> name.equals("Ahmed") iterates through each element in the list and removes it if the condition is true.
+This efficiently removes all instances of "Ahmed" from the list.
+ */
