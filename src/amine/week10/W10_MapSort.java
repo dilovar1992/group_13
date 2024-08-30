@@ -20,6 +20,16 @@ public class W10_MapSort {
 
         sortMapIntValues(map1);
 
+        Map<String, Integer> hm = new HashMap<>();
+
+        hm.put("a", 45);
+        hm.put("b", 2);
+        hm.put("c", 99);
+        hm.put("d", 14);
+
+        System.out.println("-------------hm map is being sorted-----------");
+        sortMapIntValues(hm);
+
     }
 
     /**
