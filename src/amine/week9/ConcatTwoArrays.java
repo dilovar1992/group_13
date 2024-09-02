@@ -1,10 +1,10 @@
 package amine.week9;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class ConcatTwoArrays {
     /*
-        Write a return method that can concate two array
+        Write a return method that can concatenate two array
      */
     public static void main(String[] args) {
 
@@ -42,4 +42,8 @@ public class ConcatTwoArrays {
         return mergedArray;
 
     }
+
+
+
+
 }
