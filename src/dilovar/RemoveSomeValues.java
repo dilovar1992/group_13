@@ -8,7 +8,7 @@ public class RemoveSomeValues {
     public static void main(String[] args) {
         ArrayList<Integer> nums=new ArrayList<>(Arrays.asList(500,480,1,2,3,14,16,85,78,9,102));
         System.out.println(removeIntGreaterThan(nums, 100));
-        nums.removeIf(t->t>100);
+        nums.removeIf(x->x>100);
         System.out.println(nums);
     }
     public static ArrayList<Integer> removeIntGreaterThan(ArrayList<Integer> nums,int N){
