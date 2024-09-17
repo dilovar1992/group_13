@@ -1,6 +1,4 @@
-package dilovar;
-
-import java.util.Arrays;
+package dilovar.Arrays;
 
 public class SortArrayInDescending {
     /*

@@ -1,4 +1,4 @@
-package dilovar;
+package dilovar.Arrays;
 
 import java.util.ArrayList;
 import java.util.Collections;

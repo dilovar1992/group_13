@@ -1,4 +1,4 @@
-package dilovar;
+package dilovar.Numbers;
 
 public class Question_2 {
 //    QUESTION 1 - Write a method which can identify if a given number odd or even
