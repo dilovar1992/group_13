@@ -1,4 +1,4 @@
-package dilovar;
+package dilovar.Numbers;
 
 public class Question_1 {
      /*

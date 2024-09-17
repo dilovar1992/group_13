@@ -1,9 +1,8 @@
-package dilovar;
+package dilovar.Arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 public class Question_18 {
 /*
