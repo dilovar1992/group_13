@@ -1,4 +1,4 @@
-package dilovar;
+package dilovar.String;
 
 public class IsPalyndrome {
     public static void main(String[] args) {
