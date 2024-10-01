@@ -1,4 +1,4 @@
-package dilovar;
+package dilovar.String;
 
 public class Question_13 {
     /*String -- Find the unique

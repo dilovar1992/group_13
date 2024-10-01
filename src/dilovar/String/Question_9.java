@@ -1,4 +1,4 @@
-package dilovar;
+package dilovar.String;
 
 import java.util.*;
 
