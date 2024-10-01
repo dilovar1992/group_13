@@ -6,12 +6,12 @@ public class MapFrequencyOfCharacters {
     //write a method that prints the frequency of each character from  a string
 
     public static void main(String[] args) {
+
         String str="nfsndfklsnfknvkdsjvn";
 
 
         System.out.println(frequencyOfCharacters(str));
         frequencyOfCharacters2(str);
-
 
     }
 
@@ -26,8 +26,6 @@ public class MapFrequencyOfCharacters {
         // 1st loop through array
         for (int i = 0; i < chars.length; i++) {
 
-
-
             //second loop of array to compare
             for (int j = 0; j < chars.length; j++) {
                 //if duplicates are found
@@ -36,7 +34,6 @@ public class MapFrequencyOfCharacters {
                     count++;
                 }
             }
-
             // add characters and frequency in key value format
             noDuplicates.put(chars[i],count);
 
