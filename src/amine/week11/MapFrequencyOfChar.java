@@ -7,7 +7,7 @@ public class MapFrequencyOfChar {
     //Write a method that prints the frequency of each character from a String.
 
     public static void main(String[] args) {
-        String quote = "Java Gunlukleri";
+        String quote = "Golden5golden";
 
         System.out.println("charFrequency(quote) = " + charFrequency(quote));
 
@@ -19,6 +19,7 @@ public class MapFrequencyOfChar {
         String[] chars = str.toLowerCase().replace(" ", "").split("");
 
         Map<String, Integer> frequencyMap = new HashMap<>();
+
         for (String each : chars) {
 
             //add each letter to map and increase value by 1 when it's duplicate
